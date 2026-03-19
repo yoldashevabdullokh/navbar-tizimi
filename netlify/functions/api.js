@@ -11,8 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 let todos = [
-    { id: '1', text: 'Netlify-da ishlash', completed: false },
-    { id: '2', text: 'API ulanishini tekshirish', completed: false }
+    { id: '1', text: 'Soat 3 da darsga borish', completed: false },
+    { id: '2', text: 'Soat 4 da darsga borish', completed: false }
 ];
 
 const router = express.Router();
