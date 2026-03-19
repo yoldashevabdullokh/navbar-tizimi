@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yoldashev-coder/Hujjat-generatori.git"
+    "url": "git+https://github.com/yoldashevabdullokh/node.js-todos.git"
   },
   "author": "abdulloh yoldashev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yoldashev-coder/Hujjat-generatori/issues"
+    "url": "https://github.com/yoldashevabdullokh/node.js-todos/issues"
   },
-  "homepage": "https://github.com/yoldashev-coder/Hujjat-generatori#readme",
+  "homepage": "https://github.com/yoldashevabdullokh/node.js-todos#readme",
   "keywords": [],
   "dependencies": {
     "cors": "^2.8.6",
