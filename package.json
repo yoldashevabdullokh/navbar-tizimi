@@ -1,0 +1,13 @@
+{
+    "name": "navbat-tizimi-railway",
+    "version": "1.0.0",
+    "description": "Root package for Railway deployment",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "scripts": {
+        "postinstall": "cd backend && npm install && cd ../frontend && npm install",
+        "build": "cd frontend && npm run build",
+        "start": "cd backend && npm start"
+    }
+}

@@ -4,6 +4,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
 
 const queueRoutes = require('./routes/queueRoutes');
 
@@ -26,9 +27,17 @@ app.set('io', io);
 // Routes
 app.use('/queue', queueRoutes);
 
-// Health check
-app.get('/', (req, res) => {
+// Health check (Optional api prefix health check can be added if needed)
+app.get('/api/health', (req, res) => {
   res.json({ message: 'Navbat API ishlayapti ✅' });
+});
+
+// Serve Frontend in Production
+const frontendDistPath = path.join(__dirname, '../frontend/dist');
+app.use(express.static(frontendDistPath));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(frontendDistPath, 'index.html'));
 });
 
 // Socket.io
