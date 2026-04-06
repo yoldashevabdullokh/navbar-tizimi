@@ -1,6 +1,9 @@
 {
   "name": "navbat-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "description": "Online Queue Management System - Backend",
   "main": "server.js",
   "scripts": {
